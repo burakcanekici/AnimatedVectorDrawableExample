@@ -24,9 +24,9 @@ public class MainActivity extends Activity {
         btn_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                iv_animation.setImageResource(R.drawable.check_icon_animation);
-                iv_animation.setVisibility(View.VISIBLE);
-                ((Animatable) iv_animation.getDrawable()).start();
+                iv_animation.setImageResource(R.drawable.check_icon_animation); //set animation xml to imageview
+                iv_animation.setVisibility(View.VISIBLE); //make it visible
+                ((Animatable) iv_animation.getDrawable()).start(); //start animation
             }
         });
     }
